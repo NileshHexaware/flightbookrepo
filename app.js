@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
    app.post('/',function(req,res){
       console.log('Received the request & it is:::'+JSON.stringify(req.body));
-      if(req.body.result.action=='input.personaldetails')
+      if(req.body.result.action=='')
         {     var resagent='Your Ticket has been booked ';
      console.log('request are'+resagent);
       return res.json({
